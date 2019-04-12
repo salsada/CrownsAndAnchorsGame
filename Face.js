@@ -6,7 +6,7 @@ class Face {
     }
 
     set name(faceName) {
-        this._name = faceName | "Unknown";        
+        this._name = faceName || "Unknown";        
     }
 
     get name() {
@@ -27,12 +27,16 @@ class Face {
     }
 
     set imageUrl(newImageUrl) {
-        this._imageUrl = newImageUrl | "https://media.moddb.com/cache/images/downloads/1/103/102311/thumb_620x2000/background.png";
+        this._imageUrl = newImageUrl || "https://media.moddb.com/cache/images/downloads/1/103/102311/thumb_620x2000/background.png";
     }
 
     get imageUrl() {
         return this._imageUrl;
     }
+}
+
+let testFunction = new function() {
+
 }
 
 module.exports = Face;
