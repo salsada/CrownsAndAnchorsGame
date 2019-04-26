@@ -16,6 +16,13 @@ class Mat {
         if(errors.length > 0){
             throw new Error();
         }
+        else{
+            this._faces = faces;
+        }
+    }
+
+    get faces() {
+        return this._faces;
     }
 }
 

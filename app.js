@@ -9,6 +9,8 @@ try {
 
     faces.push(myFace);
 
+    
+
     var myMat = new Mat(faces);
 
     myMat.faces
